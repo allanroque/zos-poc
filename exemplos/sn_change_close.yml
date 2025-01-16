@@ -1,0 +1,29 @@
+---
+- name: Close Change Request in ServiceNow
+  hosts: localhost
+  connection: local
+  vars:
+    sn_change_request_number: "{{ sn_change_request_number }}"
+    sn_close_code: "successful"
+    sn_close_notes: "Change successfully implemented - Job ID: awx_job_id"
+  collections:
+    - servicenow.itsm
+
+  tasks:
+    - name: Close change request
+      servicenow.itsm.change_request:
+        state: closed
+        instance:
+          host: "{{ snow_instance }}"
+          username: "{{ snow_username }}"
+          password: "{{ snow_password }}"
+        number: "{{ sn_change_request_number }}"
+        close_code: "{{ sn_close_code }}"
+        close_notes: "{{ sn_close_notes }}"
+        other:
+          work_notes: "TEST ANSIBLE WORK NOTES"
+
+    - name: Debug - Confirm change request closure
+      debug:
+        msg: "Change Request {{ sn_change_request_number }} closed successfully by Ansible"
+
