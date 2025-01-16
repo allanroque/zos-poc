@@ -1,0 +1,52 @@
+{
+ "collection_info": {
+  "namespace": "ibm",
+  "name": "ibm_zos_ims",
+  "version": "1.3.0",
+  "authors": [
+   "Pedro Rodriguez Trevi\u00f1o <trevinop36@ibm.com>",
+   "Ajay Jashnani <ajay.jashnani@ibm.com>",
+   "An Lam <an.lam@ibm.com>",
+   "Bryant Panyarachun <bpanyar@us.ibm.com>",
+   "Dipti Gandhi <ddgandhi@us.ibm.com>",
+   "Ketan Kelkar <ketan.kelkar@ibm.com>"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "ibm",
+   "z",
+   "zos",
+   "z_os",
+   "core",
+   "zos_core",
+   "data_set",
+   "jcl",
+   "uss",
+   "mvs",
+   "ims",
+   "zos_ims",
+   "application",
+   "database"
+  ],
+  "description": "The IBM z/OS IMS collection includes modules and sample playbooks to automate tasks for IBM IMS.",
+  "license": [
+   "Apache-2.0"
+  ],
+  "license_file": null,
+  "dependencies": {
+   "ibm.ibm_zos_core": ">=1.5.0"
+  },
+  "repository": "https://github.com/ansible-collections/ibm_zos_ims",
+  "documentation": "https://ibm.github.io/z_ansible_collections_doc/index.html",
+  "homepage": "https://www.ibm.com/support/z-content-solutions/ansible/",
+  "issues": "https://github.com/ansible-collections/ibm_zos_ims/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "2760fd8f15527aa5ebca6a2253c63644113587645455799016831945d41cebfe",
+  "format": 1
+ },
+ "format": 1
+}
